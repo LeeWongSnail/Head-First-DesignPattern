@@ -15,6 +15,11 @@
 		EB0E712C1D86BAE100DD2BB5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB0E712A1D86BAE100DD2BB5 /* LaunchScreen.storyboard */; };
 		EB0E71371D86BAE100DD2BB5 /* StrategyPatternTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EB0E71361D86BAE100DD2BB5 /* StrategyPatternTests.m */; };
 		EB0E71421D86BAE100DD2BB5 /* StrategyPatternUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = EB0E71411D86BAE100DD2BB5 /* StrategyPatternUITests.m */; };
+		EB0E71521D86BB3E00DD2BB5 /* Animals.m in Sources */ = {isa = PBXBuildFile; fileRef = EB0E71511D86BB3E00DD2BB5 /* Animals.m */; };
+		EB0E71551D86BB5800DD2BB5 /* Cat.m in Sources */ = {isa = PBXBuildFile; fileRef = EB0E71541D86BB5800DD2BB5 /* Cat.m */; };
+		EB0E71581D86BB6200DD2BB5 /* Sheep.m in Sources */ = {isa = PBXBuildFile; fileRef = EB0E71571D86BB6200DD2BB5 /* Sheep.m */; };
+		EB0E715D1D86BBA500DD2BB5 /* EatMeat.m in Sources */ = {isa = PBXBuildFile; fileRef = EB0E715C1D86BBA500DD2BB5 /* EatMeat.m */; };
+		EB0E71601D86BBAF00DD2BB5 /* EatVg.m in Sources */ = {isa = PBXBuildFile; fileRef = EB0E715F1D86BBAF00DD2BB5 /* EatVg.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +56,17 @@
 		EB0E713D1D86BAE100DD2BB5 /* StrategyPatternUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StrategyPatternUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB0E71411D86BAE100DD2BB5 /* StrategyPatternUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StrategyPatternUITests.m; sourceTree = "<group>"; };
 		EB0E71431D86BAE100DD2BB5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EB0E71501D86BB3E00DD2BB5 /* Animals.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Animals.h; sourceTree = "<group>"; };
+		EB0E71511D86BB3E00DD2BB5 /* Animals.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Animals.m; sourceTree = "<group>"; };
+		EB0E71531D86BB5800DD2BB5 /* Cat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Cat.h; sourceTree = "<group>"; };
+		EB0E71541D86BB5800DD2BB5 /* Cat.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Cat.m; sourceTree = "<group>"; };
+		EB0E71561D86BB6200DD2BB5 /* Sheep.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Sheep.h; sourceTree = "<group>"; };
+		EB0E71571D86BB6200DD2BB5 /* Sheep.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Sheep.m; sourceTree = "<group>"; };
+		EB0E715A1D86BB9500DD2BB5 /* AnimalsBehaviorProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimalsBehaviorProtocol.h; sourceTree = "<group>"; };
+		EB0E715B1D86BBA500DD2BB5 /* EatMeat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EatMeat.h; sourceTree = "<group>"; };
+		EB0E715C1D86BBA500DD2BB5 /* EatMeat.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EatMeat.m; sourceTree = "<group>"; };
+		EB0E715E1D86BBAF00DD2BB5 /* EatVg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EatVg.h; sourceTree = "<group>"; };
+		EB0E715F1D86BBAF00DD2BB5 /* EatVg.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EatVg.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +117,8 @@
 		EB0E711B1D86BAE100DD2BB5 /* StrategyPattern */ = {
 			isa = PBXGroup;
 			children = (
+				EB0E71591D86BB7700DD2BB5 /* Behavior */,
+				EB0E714F1D86BB2F00DD2BB5 /* Animals */,
 				EB0E711F1D86BAE100DD2BB5 /* AppDelegate.h */,
 				EB0E71201D86BAE100DD2BB5 /* AppDelegate.m */,
 				EB0E71221D86BAE100DD2BB5 /* ViewController.h */,
@@ -138,6 +156,31 @@
 				EB0E71431D86BAE100DD2BB5 /* Info.plist */,
 			);
 			path = StrategyPatternUITests;
+			sourceTree = "<group>";
+		};
+		EB0E714F1D86BB2F00DD2BB5 /* Animals */ = {
+			isa = PBXGroup;
+			children = (
+				EB0E71501D86BB3E00DD2BB5 /* Animals.h */,
+				EB0E71511D86BB3E00DD2BB5 /* Animals.m */,
+				EB0E71531D86BB5800DD2BB5 /* Cat.h */,
+				EB0E71541D86BB5800DD2BB5 /* Cat.m */,
+				EB0E71561D86BB6200DD2BB5 /* Sheep.h */,
+				EB0E71571D86BB6200DD2BB5 /* Sheep.m */,
+			);
+			path = Animals;
+			sourceTree = "<group>";
+		};
+		EB0E71591D86BB7700DD2BB5 /* Behavior */ = {
+			isa = PBXGroup;
+			children = (
+				EB0E715A1D86BB9500DD2BB5 /* AnimalsBehaviorProtocol.h */,
+				EB0E715B1D86BBA500DD2BB5 /* EatMeat.h */,
+				EB0E715C1D86BBA500DD2BB5 /* EatMeat.m */,
+				EB0E715E1D86BBAF00DD2BB5 /* EatVg.h */,
+				EB0E715F1D86BBAF00DD2BB5 /* EatVg.m */,
+			);
+			path = Behavior;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -271,8 +314,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				EB0E71241D86BAE100DD2BB5 /* ViewController.m in Sources */,
+				EB0E71601D86BBAF00DD2BB5 /* EatVg.m in Sources */,
+				EB0E71521D86BB3E00DD2BB5 /* Animals.m in Sources */,
+				EB0E715D1D86BBA500DD2BB5 /* EatMeat.m in Sources */,
 				EB0E71211D86BAE100DD2BB5 /* AppDelegate.m in Sources */,
+				EB0E71581D86BB6200DD2BB5 /* Sheep.m in Sources */,
 				EB0E711E1D86BAE100DD2BB5 /* main.m in Sources */,
+				EB0E71551D86BB5800DD2BB5 /* Cat.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
