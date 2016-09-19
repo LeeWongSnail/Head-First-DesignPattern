@@ -15,6 +15,11 @@
 		EB91ADD41D8F98CB000722B0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB91ADD21D8F98CB000722B0 /* LaunchScreen.storyboard */; };
 		EB91ADDF1D8F98CB000722B0 /* DecoratePatternTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EB91ADDE1D8F98CB000722B0 /* DecoratePatternTests.m */; };
 		EB91ADEA1D8F98CB000722B0 /* DecoratePatternUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = EB91ADE91D8F98CB000722B0 /* DecoratePatternUITests.m */; };
+		EB91ADFA1D8F9A00000722B0 /* Family.m in Sources */ = {isa = PBXBuildFile; fileRef = EB91ADF91D8F9A00000722B0 /* Family.m */; };
+		EB91ADFD1D8F9A16000722B0 /* House.m in Sources */ = {isa = PBXBuildFile; fileRef = EB91ADFC1D8F9A16000722B0 /* House.m */; };
+		EB91AE001D8F9A22000722B0 /* Bridge.m in Sources */ = {isa = PBXBuildFile; fileRef = EB91ADFF1D8F9A22000722B0 /* Bridge.m */; };
+		EB91AE031D8F9A61000722B0 /* WashMachine.m in Sources */ = {isa = PBXBuildFile; fileRef = EB91AE021D8F9A61000722B0 /* WashMachine.m */; };
+		EB91AE061D8F9A6C000722B0 /* TV.m in Sources */ = {isa = PBXBuildFile; fileRef = EB91AE051D8F9A6C000722B0 /* TV.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +56,16 @@
 		EB91ADE51D8F98CB000722B0 /* DecoratePatternUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DecoratePatternUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB91ADE91D8F98CB000722B0 /* DecoratePatternUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DecoratePatternUITests.m; sourceTree = "<group>"; };
 		EB91ADEB1D8F98CB000722B0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EB91ADF81D8F9A00000722B0 /* Family.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Family.h; sourceTree = "<group>"; };
+		EB91ADF91D8F9A00000722B0 /* Family.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Family.m; sourceTree = "<group>"; };
+		EB91ADFB1D8F9A16000722B0 /* House.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = House.h; sourceTree = "<group>"; };
+		EB91ADFC1D8F9A16000722B0 /* House.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = House.m; sourceTree = "<group>"; };
+		EB91ADFE1D8F9A22000722B0 /* Bridge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Bridge.h; sourceTree = "<group>"; };
+		EB91ADFF1D8F9A22000722B0 /* Bridge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Bridge.m; sourceTree = "<group>"; };
+		EB91AE011D8F9A61000722B0 /* WashMachine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WashMachine.h; sourceTree = "<group>"; };
+		EB91AE021D8F9A61000722B0 /* WashMachine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WashMachine.m; sourceTree = "<group>"; };
+		EB91AE041D8F9A6C000722B0 /* TV.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TV.h; sourceTree = "<group>"; };
+		EB91AE051D8F9A6C000722B0 /* TV.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TV.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +116,7 @@
 		EB91ADC31D8F98CB000722B0 /* DecoratePattern */ = {
 			isa = PBXGroup;
 			children = (
+				EB91ADF71D8F99A8000722B0 /* DecoratePattern */,
 				EB91ADC71D8F98CB000722B0 /* AppDelegate.h */,
 				EB91ADC81D8F98CB000722B0 /* AppDelegate.m */,
 				EB91ADCA1D8F98CB000722B0 /* ViewController.h */,
@@ -138,6 +154,23 @@
 				EB91ADEB1D8F98CB000722B0 /* Info.plist */,
 			);
 			path = DecoratePatternUITests;
+			sourceTree = "<group>";
+		};
+		EB91ADF71D8F99A8000722B0 /* DecoratePattern */ = {
+			isa = PBXGroup;
+			children = (
+				EB91ADF81D8F9A00000722B0 /* Family.h */,
+				EB91ADF91D8F9A00000722B0 /* Family.m */,
+				EB91ADFB1D8F9A16000722B0 /* House.h */,
+				EB91ADFC1D8F9A16000722B0 /* House.m */,
+				EB91ADFE1D8F9A22000722B0 /* Bridge.h */,
+				EB91ADFF1D8F9A22000722B0 /* Bridge.m */,
+				EB91AE011D8F9A61000722B0 /* WashMachine.h */,
+				EB91AE021D8F9A61000722B0 /* WashMachine.m */,
+				EB91AE041D8F9A6C000722B0 /* TV.h */,
+				EB91AE051D8F9A6C000722B0 /* TV.m */,
+			);
+			path = DecoratePattern;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -207,6 +240,7 @@
 				TargetAttributes = {
 					EB91ADC01D8F98CB000722B0 = {
 						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = XWNPFKK4U5;
 						ProvisioningStyle = Automatic;
 					};
 					EB91ADD91D8F98CB000722B0 = {
@@ -274,7 +308,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				EB91ADCC1D8F98CB000722B0 /* ViewController.m in Sources */,
+				EB91AE061D8F9A6C000722B0 /* TV.m in Sources */,
+				EB91ADFA1D8F9A00000722B0 /* Family.m in Sources */,
+				EB91AE031D8F9A61000722B0 /* WashMachine.m in Sources */,
 				EB91ADC91D8F98CB000722B0 /* AppDelegate.m in Sources */,
+				EB91ADFD1D8F9A16000722B0 /* House.m in Sources */,
+				EB91AE001D8F9A22000722B0 /* Bridge.m in Sources */,
 				EB91ADC61D8F98CB000722B0 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -422,6 +461,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = XWNPFKK4U5;
 				INFOPLIST_FILE = DecoratePattern/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.msb.DecoratePattern;
@@ -433,6 +473,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = XWNPFKK4U5;
 				INFOPLIST_FILE = DecoratePattern/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.msb.DecoratePattern;

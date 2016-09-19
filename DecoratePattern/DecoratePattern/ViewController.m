@@ -7,6 +7,12 @@
 //
 
 #import "ViewController.h"
+#import "House.h"
+#import "Family.h"
+#import "Bridge.h"
+#import "WashMachine.h"
+#import "TV.h"
+
 
 @interface ViewController ()
 
@@ -17,6 +23,21 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    
+    
+    //新建一个家 配备房子 冰箱 洗衣机 电视机
+    
+    Family *family = [[House alloc] init];
+    
+    family = [Bridge buildWithFamily:family];
+    
+    family = [WashMachine buildWithFamily:family];
+    
+    family = [TV buildWithFamily:family];
+    
+    NSLog(@"%@",family.ali_description);
+    
+    
 }
 
 
