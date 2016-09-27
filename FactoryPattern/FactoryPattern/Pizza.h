@@ -15,6 +15,8 @@
 
 - (instancetype)initWithDict:(NSString *)name;
 
+- (void)prepare;
+
 - (void)bake;
 
 - (void)cut;

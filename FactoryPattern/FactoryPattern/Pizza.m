@@ -17,6 +17,11 @@
     return pizza;
 }
 
+- (void)prepare
+{
+    
+}
+
 - (void)bake
 {
     NSLog(@"正在烘烤......................");

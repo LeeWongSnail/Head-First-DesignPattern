@@ -7,7 +7,10 @@
 //
 
 #import "Pizza.h"
+#import "PizzaIngredientFactoryProtocol.h"
 
 @interface BJCheesePizza : Pizza
+
+- (instancetype)initWithFactory:(id <PizzaIngredientFactoryProtocol> )factory;
 
 @end

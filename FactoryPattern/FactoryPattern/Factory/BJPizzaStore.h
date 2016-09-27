@@ -7,7 +7,10 @@
 //
 
 #import "PizzaStore.h"
+#import "BJPizzaFactory.h"
 
 @interface BJPizzaStore : PizzaStore
+
+@property (nonatomic, strong) BJPizzaFactory *factory;
 
 @end

@@ -7,7 +7,7 @@
 //
 
 #import "Pizza.h"
-
+#import "PizzaIngredientFactoryProtocol.h"
 @interface DBCheesePizza : Pizza
-
+- (instancetype)initWithFactory:(id <PizzaIngredientFactoryProtocol> )factory;
 @end

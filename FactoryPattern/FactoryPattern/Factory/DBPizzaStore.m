@@ -9,22 +9,24 @@
 #import "DBPizzaStore.h"
 #import "DBCheesePizza.h"
 #import "DBClamPizza.h"
+#import "DBPizzaFactory.h"
 
 @implementation DBPizzaStore
 
 - (Pizza *)createPizza:(NSInteger)aType
 {
+    DBPizzaFactory *factory = [[DBPizzaFactory alloc] init];
     Pizza *pizza = nil;
     switch (aType) {
         case 0:
         {
-            pizza = [DBCheesePizza new];
+            pizza = [[DBCheesePizza alloc] initWithFactory:factory];
             NSLog(@"---------DBCheesePizza-------------");
         }
             break;
         case 1:
         {
-            pizza = [DBClamPizza new];
+            pizza = [[DBClamPizza alloc] initWithFactory:factory];
             NSLog(@"---------DBCheesePizza-------------");
         }
             break;

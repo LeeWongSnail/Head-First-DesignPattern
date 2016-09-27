@@ -7,7 +7,8 @@
 //
 
 #import "PizzaStore.h"
-
+#import "DBPizzaFactory.h"
 @interface DBPizzaStore : PizzaStore
+@property (nonatomic, strong) DBPizzaFactory *factory;
 
 @end

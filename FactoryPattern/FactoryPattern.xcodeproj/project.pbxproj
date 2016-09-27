@@ -23,6 +23,8 @@
 		EB4CE7D11D9A12E300653E90 /* BJClamPizza.m in Sources */ = {isa = PBXBuildFile; fileRef = EB4CE7D01D9A12E300653E90 /* BJClamPizza.m */; };
 		EB4CE7D41D9A12F000653E90 /* DBCheesePizza.m in Sources */ = {isa = PBXBuildFile; fileRef = EB4CE7D31D9A12F000653E90 /* DBCheesePizza.m */; };
 		EB4CE7D71D9A12FE00653E90 /* DBClamPizza.m in Sources */ = {isa = PBXBuildFile; fileRef = EB4CE7D61D9A12FE00653E90 /* DBClamPizza.m */; };
+		EB808E0D1D9A5342003A6E59 /* BJPizzaFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = EB808E0C1D9A5342003A6E59 /* BJPizzaFactory.m */; };
+		EB808E101D9A53A5003A6E59 /* DBPizzaFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = EB808E0F1D9A53A5003A6E59 /* DBPizzaFactory.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,6 +77,11 @@
 		EB4CE7D31D9A12F000653E90 /* DBCheesePizza.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBCheesePizza.m; sourceTree = "<group>"; };
 		EB4CE7D51D9A12FE00653E90 /* DBClamPizza.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBClamPizza.h; sourceTree = "<group>"; };
 		EB4CE7D61D9A12FE00653E90 /* DBClamPizza.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBClamPizza.m; sourceTree = "<group>"; };
+		EB808E0A1D9A52D0003A6E59 /* PizzaIngredientFactoryProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PizzaIngredientFactoryProtocol.h; sourceTree = "<group>"; };
+		EB808E0B1D9A5342003A6E59 /* BJPizzaFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BJPizzaFactory.h; sourceTree = "<group>"; };
+		EB808E0C1D9A5342003A6E59 /* BJPizzaFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BJPizzaFactory.m; sourceTree = "<group>"; };
+		EB808E0E1D9A53A5003A6E59 /* DBPizzaFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBPizzaFactory.h; sourceTree = "<group>"; };
+		EB808E0F1D9A53A5003A6E59 /* DBPizzaFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBPizzaFactory.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,6 +132,7 @@
 		EB4CE78B1D9A0E4300653E90 /* FactoryPattern */ = {
 			isa = PBXGroup;
 			children = (
+				EB808E091D9A52AF003A6E59 /* AbstractFactory */,
 				EB4CE7BF1D9A0F6500653E90 /* Factory */,
 				EB4CE78F1D9A0E4300653E90 /* AppDelegate.h */,
 				EB4CE7901D9A0E4300653E90 /* AppDelegate.m */,
@@ -186,6 +194,18 @@
 				EB4CE7D61D9A12FE00653E90 /* DBClamPizza.m */,
 			);
 			path = Factory;
+			sourceTree = "<group>";
+		};
+		EB808E091D9A52AF003A6E59 /* AbstractFactory */ = {
+			isa = PBXGroup;
+			children = (
+				EB808E0A1D9A52D0003A6E59 /* PizzaIngredientFactoryProtocol.h */,
+				EB808E0B1D9A5342003A6E59 /* BJPizzaFactory.h */,
+				EB808E0C1D9A5342003A6E59 /* BJPizzaFactory.m */,
+				EB808E0E1D9A53A5003A6E59 /* DBPizzaFactory.h */,
+				EB808E0F1D9A53A5003A6E59 /* DBPizzaFactory.m */,
+			);
+			path = AbstractFactory;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -329,8 +349,10 @@
 				EB4CE7CB1D9A113100653E90 /* DBPizzaStore.m in Sources */,
 				EB4CE7D71D9A12FE00653E90 /* DBClamPizza.m in Sources */,
 				EB4CE7C81D9A112300653E90 /* BJPizzaStore.m in Sources */,
+				EB808E101D9A53A5003A6E59 /* DBPizzaFactory.m in Sources */,
 				EB4CE7C21D9A0F7600653E90 /* PizzaStore.m in Sources */,
 				EB4CE7C51D9A100A00653E90 /* Pizza.m in Sources */,
+				EB808E0D1D9A5342003A6E59 /* BJPizzaFactory.m in Sources */,
 				EB4CE78E1D9A0E4300653E90 /* main.m in Sources */,
 				EB4CE7D41D9A12F000653E90 /* DBCheesePizza.m in Sources */,
 			);
@@ -566,6 +588,7 @@
 				EB4CE7B81D9A0E4400653E90 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		EB4CE7B91D9A0E4400653E90 /* Build configuration list for PBXNativeTarget "FactoryPatternTests" */ = {
 			isa = XCConfigurationList;
@@ -574,6 +597,7 @@
 				EB4CE7BB1D9A0E4400653E90 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		EB4CE7BC1D9A0E4400653E90 /* Build configuration list for PBXNativeTarget "FactoryPatternUITests" */ = {
 			isa = XCConfigurationList;
@@ -582,6 +606,7 @@
 				EB4CE7BE1D9A0E4400653E90 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
